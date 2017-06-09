@@ -2,30 +2,26 @@ package com.dbteku.daemon.elements;
 
 import com.dbteku.daemon.interfaces.IService;
 
-import javafx.application.Platform;
-import javafx.scene.control.Label;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 
 public class DaemonElement extends HBox{
 
-	private static final String RED = "com/extronics/daemon/resources/red.png";
-	private static final String GREEN = "com/extronics/daemon/resources/green.png";
-	private static final String YELLOW = "com/extronics/daemon/resources/yellow.png";
-	private static final double PIC_SIZE = 15;
-	private static final float RESTART_TIME = 3.0f;
+//	private static final String RED = "com/extronics/daemon/resources/red.png";
+//	private static final String GREEN = "com/extronics/daemon/resources/green.png";
+//	private static final String YELLOW = "com/extronics/daemon/resources/yellow.png";
+//	private static final double PIC_SIZE = 15;
+//	private static final float RESTART_TIME = 3.0f;
 	private final IService SERVICE;
-	private Label name;
-	private Image statusIndicator;
-	private boolean restarting;
+//	private Label name;
+//	private Image statusIndicator;
+//	private boolean restarting;
 
 	public DaemonElement(IService service) {
 		this.SERVICE = service;
 //		this.SERVICE.subscribe(this);
 //		this.name = new Label(service.getId());
-		restarting = false;
-		updateUI(RED);
+//		restarting = false;
+//		updateUI(RED);
 	}
 
 	public void start(){
@@ -63,16 +59,16 @@ public class DaemonElement extends HBox{
 //		}
 	}
 
-	private void updateUI(String imageUrl){
-		Platform.runLater(()->{
-			this.statusIndicator = new Image(imageUrl);
-			getChildren().clear();
-			ImageView view = new ImageView(statusIndicator);
-			view.setFitWidth(PIC_SIZE);
-			view.setFitHeight(PIC_SIZE);
-			getChildren().addAll(name, view);
-		});
-	}
+//	private void updateUI(String imageUrl){
+//		Platform.runLater(()->{
+//			this.statusIndicator = new Image(imageUrl);
+//			getChildren().clear();
+//			ImageView view = new ImageView(statusIndicator);
+//			view.setFitWidth(PIC_SIZE);
+//			view.setFitHeight(PIC_SIZE);
+//			getChildren().addAll(name, view);
+//		});
+//	}
 
 //	@Override
 //	public void onStatusChange(IService service) {

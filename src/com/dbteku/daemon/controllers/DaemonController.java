@@ -3,7 +3,6 @@ package com.dbteku.daemon.controllers;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import com.dbteku.daemon.interfaces.IService;
 import com.dbteku.daemon.runnables.ExitRunnable;
 
 import javafx.fxml.FXML;
@@ -105,7 +104,7 @@ public class DaemonController implements Initializable {
 //		servicesList.getItems().add(new DaemonElement(service));
 //	}
 	
-	private void startStartupServices(){
+//	private void startStartupServices(){
 //		ObservableList<DaemonElement> all = servicesList.getItems();
 //		for (DaemonElement daemonElement : all) {
 //			ProcessService service = (ProcessService) daemonElement.getService();
@@ -113,5 +112,5 @@ public class DaemonController implements Initializable {
 //				daemonElement.start();
 //			}
 //		}
-	}
+//	}
 }
